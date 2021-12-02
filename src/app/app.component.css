@@ -1,0 +1,138 @@
+.left_area h3{
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: #19B3D3;
+}
+
+
+.sidebar {
+  /* background: linear-gradient(
+    45deg, rgb(22, 32, 58) 0%, rgb(32, 46, 84) 100%);
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 160px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left; */
+  position: fixed;
+    width: 160px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 0px 20px;
+    z-index: 999;
+    background: linear-gradient(
+45deg, rgb(22, 32, 58) 0%, rgb(32, 46, 84) 100%);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+     justify-content: space-between; 
+}
+
+.sidebar h4{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  /* line-height: 115px; */
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  color: rgb(207,112,104);
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 70px;
+  font-size: 20px;
+  margin: 20px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: rgb(207,112,104);
+}
+
+#check:checked ~ .sidebar{
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  width: 80px;
+  margin-left: 170px;
+  padding-top:45px;
+  text-align: inherit;
+}
+.content{
+  margin-left: 160px;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .content{
+  margin-left: 60px;
+}
+
+#check{
+  display: none;
+}
+
+.links{
+  color: white !important;
+  line-height: 10px !important;
+  text-decoration: none;
+  padding-left: 40px;
+  padding-top: 10px !important;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-size: 25px;
+  margin-top: 10px !important;
+}
+.link-group{
+  padding-bottom: 24px;
+  padding-left: 0px;
+  padding-right: 30px;
+}
+      
+
+#check:checked ~ .sidebar .links{
+  font-size: 20px;
+  width: 80px;
+  margin-left: 170px;
+  padding-top:10px !important;
+  text-align: inherit;
+}
+
