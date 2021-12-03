@@ -12,15 +12,7 @@
 
 
 .sidebar {
-  /* background: linear-gradient(
-    45deg, rgb(22, 32, 58) 0%, rgb(32, 46, 84) 100%);
-  padding-top: 30px;
-  position: fixed;
-  left: 0;
-  width: 160px;
-  height: 100%;
   transition: 0.5s;
-  transition-property: left; */
   position: fixed;
     width: 160px;
     padding: 0px;
@@ -49,7 +41,6 @@
   color: #fff;
   display: block;
   width: 100%;
-  /* line-height: 115px; */
   text-decoration: none;
   padding-left: 40px;
   box-sizing: border-box;
@@ -89,13 +80,6 @@ label #sidebar_btn:hover{
   display: none;
 }
 
-#check:checked ~ .sidebar a{
-  font-size: 20px;
-  width: 80px;
-  margin-left: 170px;
-  padding-top:45px;
-  text-align: inherit;
-}
 .content{
   margin-left: 160px;
   height: 100vh;

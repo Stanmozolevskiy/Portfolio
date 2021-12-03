@@ -26,28 +26,3 @@
     visibility: visible;  
     transition-duration: 1s;
   }
-
-  .text-change::before {
-    content: "Angular";
-    animation: animate infinite 7s;
-    padding-left: 10px;
-    
-  }
-  
-  @keyframes animate {
-  
-    0% {
-        content: "Angular";
-    }
-  
-    50% {
-        content: "AWS";
-    }
-  
-    75% {
-        content: ".Net 5";
-    }
-    100% {
-      content: "SQL";
-  }
-  }

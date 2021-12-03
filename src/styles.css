@@ -10,3 +10,28 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+.main-box{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+.text-red{
+    color:rgb(207,112,104);
+}
+.text-gray{
+   color:rgb(225,225,225,0.8);
+   font: 300 1.333em / 1.6 Lato, Helvetica, Arial, sans-serif;
+}
+.text-white{
+    color: white;
+    font: 600 0.925em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
