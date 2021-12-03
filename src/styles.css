@@ -9,6 +9,7 @@ body {
   -webkit-box-pack: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: Lato, Helvetica, Arial, sans-serif;
 }
 .main-box{
     display: flex;
@@ -16,9 +17,9 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
     min-height: 100vh;
+    
   }
-  
-.text-red{
+  .text-red{
     color:rgb(207,112,104);
 }
 .text-gray{

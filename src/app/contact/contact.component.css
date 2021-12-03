@@ -12,6 +12,7 @@
     outline: none;
     border-radius: 4px;
     border: 2px solid rgb(207,112,104);
+    margin-top:20px;
   }
   button:hover {
     transition-duration: 1s;
@@ -25,4 +26,36 @@
   .edit_hover_class:hover fa-icon {
     visibility: visible;  
     transition-duration: 1s;
+  }
+  .input{
+    display: block;
+    padding: 12px;
+    width: 100%;
+    margin-top: 5px;
+    background: rgb(28, 40, 73);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    transition: background 0.3s ease 0s, border 0.3s ease 0s;
+    
+  }
+  .form-text{
+    margin: 0px;
+    font: 600 0.925em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    
+  }
+  .form-group{
+    padding-top: 20px;
+  }
+  p, li{
+    font: 300 1em / 1.6 Lato, Helvetica, Arial, sans-serif;
+    margin: 12px 0px 0px;
+  }
+  strong{
+    margin: 0px;
+    font: 600 0.925em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  li{
+    font-size: 18px;
   }

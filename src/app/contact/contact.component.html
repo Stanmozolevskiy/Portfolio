@@ -12,7 +12,7 @@
                     <p class="text-gray">Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:
                     </p>
                     <ul class="text-gray">
-                    <li>Email: <strong><a class="text-red" href="mailto:stanmozolevskiy@gmail.com" target="_blank" rel="noreferrer">stanmozolevskiy@gmail.com</a></strong></li>
+                    <li  >Email: <strong><a class="text-red" href="mailto:stanmozolevskiy@gmail.com" target="_blank" rel="noreferrer">stanmozolevskiy@gmail.com</a></strong></li>
                     <li>LinkedIn: <strong><a class="text-red" href="https://www.linkedin.com/in/stanislavmozolevskiy/" target="_blank" rel="noreferrer">stanislavmozolevskiy</a></strong></li>
                     <li>GitHub: <strong><a class="text-red" href="https://github.com/Stanmozolevskiy" target="_blank" rel="noreferrer">stanmozolevskiy</a></strong></li>
                     </ul>
@@ -24,21 +24,20 @@
                 <div class="jg55wx-0 kFkrZx">
                     <h2 class="sc-1w5zmqf-0 cCTxhK">Contact Form</h2>
                     <div class="ssccpk-0 iMwvao"></div>
-                    <form>
+                    <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label for="name">Name</label>
+                            <input type="name" class="form-control input" formControlName="name" placeholder="Enter your full name...">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          <label for="exampleInputEmail1">Email</label>
+                          <input type="email" class="form-control input" formControlName="email" aria-describedby="emailHelp" placeholder="Enter your email...">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control input" formControlName="text" rows="3" placeholder="Enter your message..."></textarea>
                           </div>
-                        <button type="submit" class="btn btn-lg edit_hover_class">Submit</button>
+                        <button type="submit" class="btn btn-lg edit_hover_class">Send message</button>
                       </form>
                     </div>
             </div>

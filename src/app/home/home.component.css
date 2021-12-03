@@ -1,5 +1,5 @@
 
-  button {
+  .custom-btn {
     transition: all .5s ease;
     color: #fff;
     font-family:'Montserrat', sans-serif;
@@ -13,10 +13,17 @@
     border-radius: 4px;
     border: 2px solid rgb(207,112,104);
   }
-  button:hover {
+  a:hover {
+     text-decoration: none; 
+    }
+
+  .custom-btn:hover {
     transition-duration: 1s;
     color: #001F3F;
     background-color: rgb(207,112,104);
+  }
+  .link:hover{
+    color:rgb(204, 130, 123);
   }
   
   .edit_hover_class fa-icon{
