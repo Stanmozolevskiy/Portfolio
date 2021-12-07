@@ -1,0 +1,118 @@
+h1{
+    margin: 0px;
+    font: 600 2.4em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.about-box{
+    background: linear-gradient(
+        45deg, rgb(28, 40, 73) 0%, rgb(36, 52, 95) 100%);
+        padding: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  p{
+    font: 300 1em / 1.6 Lato, Helvetica, Arial, sans-serif;
+    margin: 12px 0px 0px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 112.5%;
+  }
+  strong{
+    font: 600 0.925em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+  }
+.left-ul{
+  list-style-type: none;
+}
+.left-side-title:hover{
+color:#aaa;
+}
+.right-li{
+  font: 300 .975em / 1.6 Lato, Helvetica, Arial, sans-serif;
+}
+
+  $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
+  $gutter: 40px;
+  $border-width: 0.5px;
+  $dot-diameter: 16px;
+
+  .timeline {
+    width:100%;
+    padding:20px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left:calc(20% + 46px); //$gutter/2
+      bottom: 65px;
+      width: $border-width;
+      background: #ddd;
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .entry {
+    clear: both;
+    text-align: left;
+    position: relative;
+    .title {
+      margin-bottom: .5em;
+      float: left;
+      width: 20%;
+      padding-right: $gutter;
+      text-align: right;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: $dot-diameter;
+        height: $dot-diameter;
+        border: $border-width solid salmon;
+        background-color:#fff;
+        border-radius:100%;
+        top: 15%;
+        right: -$dot-diameter;
+        z-index: 99;
+      }
+      h3 {
+        margin: 0;
+        font-size: 120%;
+      }
+      p {
+        margin: 0;
+        font-size: 100%;
+      }
+    }
+    .body {
+      margin: 0 0 3em;
+      float: right;
+      width: 80%;
+      padding-left: $gutter;
+      p {
+        line-height: 1.4em;
+        &:first-child {
+          margin-top: 0;
+          font-weight: 400;
+        }
+      }
+      ul {
+        color:#aaa;
+        padding-left: 0;
+        list-style-type: none;
+        li:before {
+          content: "·";
+          font-weight: 900;
+          margin-right: .5em;
+        }
+      }
+    }
+  }

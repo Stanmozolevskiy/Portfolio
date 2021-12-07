@@ -17,10 +17,13 @@ body {
     -webkit-box-pack: center;
     justify-content: center;
     min-height: 100vh;
-    
+    color: rgba(255, 255, 255, 0.8);
   }
-  .text-red{
+.text-red{
     color:rgb(207,112,104);
+}
+.text-red:hover{
+  color:rgb(207,112,104);
 }
 .text-gray{
    color:rgb(225,225,225,0.8);
