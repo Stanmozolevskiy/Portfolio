@@ -80,6 +80,7 @@ label #sidebar_btn:hover{
   display: none;
 }
 
+
 .content{
   margin-left: 160px;
   height: 100vh;
@@ -87,7 +88,7 @@ label #sidebar_btn:hover{
 }
 
 #check:checked ~ .content{
-  margin-left: 60px;
+  margin-left: 0px;
 }
 
 #check{

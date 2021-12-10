@@ -37,7 +37,7 @@ color:#aaa;
 
   $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
   $gutter: 40px;
-  $border-width: 0.5px;
+  $border-width: 0.1px;
   $dot-diameter: 16px;
 
   .timeline {
@@ -51,7 +51,7 @@ color:#aaa;
       left:calc(20% + 46px); //$gutter/2
       bottom: 65px;
       width: $border-width;
-      background: #ddd;
+      background: rgba(221, 221, 221, 0.637);
     }
     &:after {
       content: "";
