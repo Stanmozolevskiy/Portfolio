@@ -20,9 +20,11 @@ export class ContactComponent implements OnInit {
     })
   }
   onSubmit(){
+    const email = {...this.email, ...this.contactForm.value};
     this.contactForm.reset();
     this.contactForm.disable();
     this.emailSent = true;
+    this.sendEmail(email);
   }
 
   sendEmail(email:Email) {
@@ -32,6 +34,7 @@ export class ContactComponent implements OnInit {
       name: email.name, 
       email:email.emial}).subscribe();
   }
+  private email!: Email;
 }
 export class Email{
   constructor(
