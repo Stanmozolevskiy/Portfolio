@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFireFunctions } from '@angular/fire/functions';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -9,29 +9,34 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
   contactForm!:FormGroup;
+  emailSent!: boolean;
   constructor(private fB: FormBuilder, private fun: AngularFireFunctions) { }
 
   ngOnInit(): void {
    this.contactForm = this.fB.group({
-      name:'',
-      email:'',
-      message:'',
+      name:["", [Validators.required, Validators.minLength(3), Validators.maxLength(100)]],
+      email:["", [Validators.required, Validators.email, Validators.minLength(3)]],
+      message:["", [Validators.required, Validators.minLength(3)]]
     })
   }
   onSubmit(){
-  //  console.log(this.contactForm.value);
     this.contactForm.reset();
-    this.sendEmail();
+    this.contactForm.disable();
+    this.emailSent = true;
   }
 
-  sendEmail() {
+  sendEmail(email:Email) {
     const callable = this.fun.httpsCallable('emailMessage');
-    
     callable({ 
-      message: 'This is my first sendgrid email via Firebase functions',
-      name: 'Abdul Muhamed', 
-      email:"mozolevski90@gmail.com"})
-      .subscribe(
-      res=> console.log(res));
+      message: email.message,
+      name: email.name, 
+      email:email.emial}).subscribe();
   }
+}
+export class Email{
+  constructor(
+    public name: string,
+    public emial: string,
+    public message: string
+  ){}
 }
