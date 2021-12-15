@@ -32,7 +32,7 @@ export class ContactComponent implements OnInit {
     callable({ 
       message: email.message,
       name: email.name, 
-      email:email.emial}).subscribe();
+      email: email.emial}).subscribe(res => console.log(res));
   }
   private email!: Email;
 }
