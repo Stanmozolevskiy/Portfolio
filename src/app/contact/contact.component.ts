@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
    this.contactForm = this.fB.group({
       name:["", [Validators.required, Validators.minLength(3), Validators.maxLength(100)]],
-      email:["", [Validators.required, Validators.email, Validators.minLength(3)]],
+      sender:["", [Validators.required, Validators.email, Validators.minLength(3)]],
       message:["", [Validators.required, Validators.minLength(3)]]
     })
   }
@@ -30,16 +30,16 @@ export class ContactComponent implements OnInit {
   sendEmail(email:Email) {
     const callable = this.fun.httpsCallable('emailMessage');
     callable({ 
-      message: email.message,
-      name: email.name, 
-      email: email.emial}).subscribe(res => console.log(res));
+        message: email.message,
+        sender: email.sender,
+        name: email.name}).subscribe(res => console.log(res));
   }
   private email!: Email;
 }
 export class Email{
   constructor(
-    public name: string,
-    public emial: string,
-    public message: string
+    public sender: string,
+    public message: string,
+    public name: string
   ){}
 }
