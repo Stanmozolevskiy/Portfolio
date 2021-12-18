@@ -1,0 +1,213 @@
+.portfolio-header{
+    background: linear-gradient(
+        45deg, rgb(36, 52, 95) 0%, rgb(28, 40, 73) 100%);
+            padding-top: 80px;
+            padding-bottom: 20px; 
+}
+.cUOJHT {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0px auto;
+    padding: 0px 24px;
+}
+.kJDeaE {
+    margin: 0px;
+    font: 300 0.875em / 1.6 Lato, Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+  .oGrtH {
+    margin: 0px;
+    font: 600 2.4em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+  }
+  .dcBKiZ {
+    margin: 0px;
+    font: 600 1.33em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+
+  button,
+input {
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+    color: #f96332;
+}
+
+a:hover,
+a:focus {
+    color: #f96332;
+}
+
+.category {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #9A9A9A;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(32, 46, 84);
+    cursor: pointer;
+    transition: background 0.25s ease 0s;
+}
+.nav-item .nav-link,
+.nav-tabs .nav-link {
+    -webkit-transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -o-transition: all 300ms ease 0s;
+    -ms-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+}
+
+.card a {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s;
+}
+
+[data-toggle="collapse"][data-parent="#accordion"] i {
+    -webkit-transition: transform 150ms ease 0s;
+    -moz-transition: transform 150ms ease 0s;
+    -o-transition: transform 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: transform 150ms ease 0s;
+}
+
+[data-toggle="collapse"][data-parent="#accordion"][aria-expanded="true"] i {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.now-ui-icons {
+    display: inline-block;
+    font: normal normal normal 14px/1 'Nucleo Outline';
+    font-size: inherit;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@-webkit-keyframes nc-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes nc-icon-spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes nc-icon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.now-ui-icons.objects_umbrella-13:before {
+    content: "\ea5f";
+}
+
+.now-ui-icons.shopping_cart-simple:before {
+    content: "\ea1d";
+}
+
+.now-ui-icons.shopping_shop:before {
+    content: "\ea50";
+}
+
+.now-ui-icons.ui-2_settings-90:before {
+    content: "\ea4b";
+}
+
+.nav-tabs {
+    border: 0;
+    padding: 30px 0.7rem;
+}
+
+.nav-tabs:not(.nav-tabs-neutral)>.nav-item>.nav-link.active {
+    box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card .nav-tabs {
+    border-top-right-radius: 0.1875rem;
+    border-top-left-radius: 0.1875rem;
+}
+
+.nav-tabs>.nav-item>.nav-link {
+    margin: 0;
+    margin-right: 10px;
+    border-radius: 30px;
+    padding: 8px 16px;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(32, 46, 84);
+    cursor: pointer;
+    transition: background 0.25s ease 0s;
+}
+
+.nav-tabs>.nav-item>.nav-link:hover {
+    background-color: transparent;
+}
+
+.nav-tabs>.nav-item>.nav-link.active {
+    background-color: rgb(207,112,104);
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+
+
+
+/* 
+
+
+@media screen and (max-width: 768px) {
+
+    .nav-tabs {
+        display: inline-block;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+    }
+
+    .nav-tabs .nav-item>.nav-link {
+        margin-bottom: 5px;
+    }
+}
+ */
