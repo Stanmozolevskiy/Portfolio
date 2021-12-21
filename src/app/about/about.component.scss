@@ -8,6 +8,19 @@ h1{
         45deg, rgb(28, 40, 73) 0%, rgb(36, 52, 95) 100%);
         padding: 32px;
 }
+.icon{
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.no-wrap{
+  white-space: nowrap;
+  float: left;
+  padding-top: 10px;
+}
+.secont-title{
+  color:white; padding-top: 100px
+}
 
   p{
     font: 300 1em / 1.6 Lato, Helvetica, Arial, sans-serif;
@@ -115,6 +128,9 @@ color:#aaa;
     /* For mobile phones: */
     [class*="col-"] {
       width: 100%;
+    }
+    .secont-title{
+      color:white; padding-top: 280px
     }
     .left-ul{
       list-style-type: none;

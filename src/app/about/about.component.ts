@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
   age!:number;
+  iconSize:number = 25;
   constructor() { }
 
   ngOnInit(): void {
