@@ -36,6 +36,13 @@
     margin: 0px auto;
     padding: 0px 24px;
 }
+.buttons{
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  
+}
 
 .oGrtH {
   margin: 0px;
