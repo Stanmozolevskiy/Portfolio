@@ -1,16 +1,4 @@
-<div class="portfolio-header">
-    <div class="cUOJHT">
-        <h1 class="oGrtH">Fullstack Web Developer Portfolio</h1>
-        <p style="padding-bottom:20px;
-                  padding-top:20px;
-                  line-height: 1.61em;
-                  font: 300 1em / 1.6 Lato, Helvetica, Arial, sans-serif;
-                  margin: 0px;
-                  color: rgba(255, 255, 255, 0.8);
-                  font-size: 1.2em;">Just some of the projects I worked on.
-                  </p>
-    </div>
-</div>
+<app-header [mainHeader]="'Fullstack Web Developer Portfolio'" [secondaryHeader]="'Just some of the projects I worked on.'"></app-header>
 
 <div class="box container" style="color: white;">
 
@@ -45,7 +33,7 @@
             <div class="container" style="max-width: 1100;">
             <div class="row" style="margin-bottom: 50px;">
               <div class="col-md-4">
-                <div class="profile-card-2"><a href="https://www.thegroomsmith.us/" target="blnk">
+                <div class="profile-card-2"><a  routerLink="/portfolio/groomsmith">
                   <img src="../../assets/images/TheGroomsmith/HomePage.jpg"></a>
                     <div class="profile-name">THE GROOMSMITH</div>
                     <div class="profile-username">Barbershop</div> 
@@ -83,11 +71,52 @@
                     <div class="profile-username">Weather Forecast</div> 
                   </div>
               </div>
+
+              <div class="col-md-4">
+                <div class="profile-card-2"><a href="https://stanmozolevskiy.github.io/Weather-forecast/" target="blank">
+                  <img src="../../assets/images/WeatherForecast.jpg"></a>
+                    <div class="profile-name">B2W Inform</div>
+                    <div class="profile-username">Data tool</div> 
+                  </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="profile-card-2"><a href="https://stanmozolevskiy.github.io/Weather-forecast/" target="blank">
+                  <img src="../../assets/images/WeatherForecast.jpg"></a>
+                    <div class="profile-name">JWT Operations</div>
+                    <div class="profile-username">JWT Operations</div> 
+                  </div>
+              </div>
     
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">two</div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container" style="max-width: 1100;">
+                <div class="row" style="margin-bottom: 50px;">
+       
+                  <div class="col-md-4">
+                    <div class="profile-card-2"><a href="https://movieapes.com/" target="blank">
+                      <img src="../../assets/images/MovieApes.jpg"></a>
+                        <div class="profile-name">MOVIE APES</div>
+                        <div class="profile-username">Movie Rating </div> 
+                      </div>
+                  </div>
+    
+                  <div class="col-md-4">
+                    <div class="profile-card-2"><a href="https://stanmozolevskiy.github.io/Weather-forecast/" target="blank">
+                      <img src="../../assets/images/WeatherForecast.jpg"></a>
+                        <div class="profile-name" >WEATHER APP</div>
+                        <div class="profile-username">Weather Forecast</div> 
+                      </div>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+        </div>
         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">three</div>
       </div>
       
@@ -96,5 +125,4 @@
       
 
 </div>
-
 <app-getintouch></app-getintouch>

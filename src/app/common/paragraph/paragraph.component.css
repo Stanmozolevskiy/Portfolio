@@ -1,0 +1,34 @@
+
+h2{
+    margin: 0px;
+    font: 600 1.8em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+p{
+    font: 300 1.1em / 1.6 Lato, Helvetica, Arial, sans-serif;
+    margin: 12px 0px 0px;
+    color:rgba(255, 255, 255, 0.6) ;
+}
+strong{
+    margin: 0px;
+    font: 600 0.925em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    font: 300 1.1em / 1.6 Lato, Helvetica, Arial, sans-serif;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    color:rgba(255, 255, 255, 0.6);
+}
+.article{
+   padding: 80px ;
+}

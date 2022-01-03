@@ -1,0 +1,44 @@
+
+.cRoBFH {
+    background: linear-gradient(
+45deg, rgb(36, 52, 95) 0%, rgb(28, 40, 73) 100%);
+    overflow: hidden;
+    padding: 16px;
+}
+.dcBKiZ {
+    margin: 0px;
+    font: 600 1.33em / 1.2 Raleway, Helvetica, Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.rjSbT {
+    margin-bottom: 8px;
+}
+.ckGpcc {
+    list-style: none;
+    margin: 0px -3px;
+    padding: 0px;
+}
+.kuhAkt {
+    font-size: 0.875rem;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    margin: 3px;
+    padding: 0px 8px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease 0s, opacity 0.3s ease;
+}
+.hiFDRm {
+    margin: 0px;
+    font: 300 1em / 1.6 Lato, Helvetica, Arial, sans-serif;
+}
+
+a{
+    color: rgb(226, 120, 108);
+    transition: color 0.2s ease 0s;
+    text-decoration: none;
+}
+aside{
+    margin-bottom: 20px;
+}

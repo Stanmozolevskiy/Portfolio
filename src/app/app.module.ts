@@ -10,8 +10,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
-import { GetintouchComponent } from './getintouch/getintouch.component';
+import { GetintouchComponent } from './common/getintouch/getintouch.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SinglePortfolioComponent } from './portfolio/single-portfolio/single-portfolio.component';
+import { HeaderComponent } from './common/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AsideComponent } from './common/aside/aside.component';
+import { ParagraphComponent } from './common/paragraph/paragraph.component';
 
 
 const config = {
@@ -31,7 +36,11 @@ const config = {
     ContactComponent,
     AboutComponent,
     GetintouchComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    SinglePortfolioComponent,
+    HeaderComponent,
+    AsideComponent,
+    ParagraphComponent
     
   ],
   imports: [
@@ -40,7 +49,8 @@ const config = {
     FontAwesomeModule,
     ReactiveFormsModule ,
     AngularFireModule.initializeApp(config),
-    AngularFireFunctionsModule
+    AngularFireFunctionsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

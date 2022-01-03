@@ -1,0 +1,9 @@
+<aside class="sc-11aftay-1 cRoBFH">
+    <h3 class="sc-1w5zmqf-0 dcBKiZ">{{header}}</h3>
+    <div class="ssccpk-0 rjSbT"></div>
+    <ul class="sc-11aftay-2 ckGpcc" *ngIf="tags">
+        <li class="sc-11aftay-3 kuhAkt" *ngFor="let tag of tags">{{tag}}</li>
+    </ul>
+    <p class="sc-1w5zmqf-0 hiFDRm text-white" *ngIf="year"> {{year}}</p>
+    <a *ngIf="link" href={{link}} target="_blank" rel="noopener noreferrer">{{link}}</a>
+</aside>
