@@ -18,7 +18,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AsideComponent } from './common/aside/aside.component';
 import { ParagraphComponent } from './common/paragraph/paragraph.component';
 
-
 const config = {
   apiKey: "AIzaSyDYfIolSWky_mSTDqu5ukJ5pApqksK_Ri0",
   authDomain: "email-handler-e3a22.firebaseapp.com",
@@ -44,13 +43,14 @@ const config = {
     
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     FontAwesomeModule,
     ReactiveFormsModule ,
     AngularFireModule.initializeApp(config),
     AngularFireFunctionsModule,
-    NgbModule
+    NgbModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
