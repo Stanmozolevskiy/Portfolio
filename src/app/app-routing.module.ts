@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'about', component: AboutComponent},
   {path: 'portfolio', component: PortfolioComponent},
-  {path: 'query', component: SinglePortfolioComponent},
+  {path: 'portfolio/:query', component: SinglePortfolioComponent},
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 <h2>{{header}}</h2>
 <p *ngIf="paragraph">{{paragraph}}</p>
 <ul *ngIf="tags">
-    <li *ngFor="let tag of tags">{{tag}}</li>
+    <li *ngFor="let tag of tags"><strong>{{tag}}</strong></li>
 </ul>
 <ul *ngIf="links">
     <li *ngFor="let link of links">{{link}}</li>

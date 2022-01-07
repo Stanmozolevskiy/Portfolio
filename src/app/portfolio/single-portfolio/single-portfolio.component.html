@@ -1,5 +1,5 @@
 
-<app-header [mainHeader]="'Fullstack Web Developer Portfolio'" [secondaryHeader]="'Just some of the projects I worked on.'"></app-header>
+<app-header [mainHeader]="portfolioData.name" [secondaryHeader]="portfolioData.secondTitle"></app-header>
 
 <div class="box article">
     <div class="container" style="max-width: 1140px">
@@ -7,24 +7,10 @@
         <div class="row">
             <div class="col-8">
                
-                <ngb-carousel *ngIf="images" [showNavigationIndicators]='true'>
-                    <ng-template ngbSlide  >
+                <ngb-carousel *ngIf="images" [animation]="false" [interval]="2000" >
+                    <ng-template ngbSlide *ngFor="let image of portfolioData.images" >
                       <div class="picsum-img-wrapper" style="height: 350px;">
-                        <img [src]="images[0]">
-                      </div>
-                      <div class="carousel-caption">
-                      </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                      <div class="picsum-img-wrapper" style="height: 350px;">
-                        <img [src]="images[1]" >
-                      </div>
-                      <div class="carousel-caption">
-                      </div>
-                    </ng-template>
-                    <ng-template ngbSlide>
-                      <div class="picsum-img-wrapper" style="height: 350px;">
-                        <img [src]="images[2]">
+                        <img [src]="image">
                       </div>
                       <div class="carousel-caption">
                       </div>
@@ -33,32 +19,21 @@
 
                 <div style="padding-top: 40px;">
                     <app-paragraph [header]="'Technical specification'"
-                    [paragraph]="'Perfected App is a web agency website used to market app development services. The website was initialy built on WordPress platform but was later moved to React and GatsbyJS. It utilizes some advanced page transitions and animations.'"
-                    ></app-paragraph>
+                    [paragraph]="portfolioData.techSpecifications"></app-paragraph>
                   
-                    <h2>Responsibilities</h2>
-                    <p>I was responsible for converting design files into fully working web pages with complex animations and transitions between pages.</p>
-                    <ul>
-                    <li><strong>Front End Development</strong></li>
-                    <li><strong>Advanced Animations</strong></li>
-                    <li>Integration with <strong>WordPress</strong></li>
-                    <li>Moving to <strong>React and GatsbyJS</strong> static site generator</li>
-                    <li><strong>Responsive Design</strong></li>
-                    <li>User Experience</li>
-                    <li>Deployment to <strong>AWS Amplify</strong></li>
-                    </ul>
-                    
-                    <h2>Challenges</h2>
-                    <p>Obviously, the biggest challenge for this project was handling live page transitions and UI elements animations. Initially, the website was built using jQuery and vanilla JavaScript. Because of the performance boost, security and reduced maintenance cost it was later moved to React and Gatsby static site generator.</p>
-                    <p>The move from WordPress to Gatsby resulted in major performance boost (over <strong>3 times faster load time</strong>), <strong>PWA</strong> (Progressive Web Application) support and <strong>huge maintenace cost reduce</strong> (it is way cheaper to host a static site compared to a WordPress theme).</p></div>
-
+                    <app-paragraph [header]="'Responsibilities'"
+                    [paragraph]="portfolioData.responsibilities" [tags]="portfolioData.boolet"></app-paragraph>
+                            
+                    <app-paragraph [header]="'Challenges'"
+                    [paragraph]="portfolioData.chalanges"></app-paragraph>
+                  </div>
                 </div>
            
             <div class="col-4">
                 <div style="padding-left: 10px; padding-right: 10px;">
-                    <app-aside [tags]="tags" [header]="'Technologies'"></app-aside>
-                    <app-aside [year]="year" [header]="'Date'"></app-aside>
-                    <app-aside [link]="link" [header]="'Online'"></app-aside>
+                    <app-aside [tags]="portfolioData.tags" [header]="'Technologies'"></app-aside>
+                    <app-aside [year]="portfolioData.date" [header]="'Date'"></app-aside>
+                    <app-aside [link]="portfolioData.link" [header]="'Online'"></app-aside>
                 </div>
             </div>
         </div>
