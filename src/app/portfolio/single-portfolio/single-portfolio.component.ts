@@ -14,11 +14,7 @@ export class SinglePortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((query:any)=> {
-
-        console.log(query.params.query);
-        
         this.portfolioData = getData().filter((x:any)=> x.id == query.params.query)[0];
-        console.log(this.portfolioData);
     })
   }
 

@@ -10,13 +10,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
-import { GetintouchComponent } from './common/getintouch/getintouch.component';
+import { GetintouchComponent } from './getintouch/getintouch.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SinglePortfolioComponent } from './portfolio/single-portfolio/single-portfolio.component';
 import { HeaderComponent } from './common/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AsideComponent } from './common/aside/aside.component';
 import { ParagraphComponent } from './common/paragraph/paragraph.component';
+
+
 
 const config = {
   apiKey: "AIzaSyDYfIolSWky_mSTDqu5ukJ5pApqksK_Ri0",
@@ -39,8 +41,7 @@ const config = {
     SinglePortfolioComponent,
     HeaderComponent,
     AsideComponent,
-    ParagraphComponent
-    
+    ParagraphComponent 
   ],
   imports: [
     AppRoutingModule,
@@ -49,8 +50,7 @@ const config = {
     ReactiveFormsModule ,
     AngularFireModule.initializeApp(config),
     AngularFireFunctionsModule,
-    NgbModule,
-    
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

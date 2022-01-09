@@ -1,5 +1,7 @@
 <h2>{{header}}</h2>
-<p *ngIf="paragraph">{{paragraph}}</p>
+<div *ngIf="paragraph">
+    <p *ngFor="let text of paragraph">{{text}}</p>
+</div>
 <ul *ngIf="tags">
     <li *ngFor="let tag of tags"><strong>{{tag}}</strong></li>
 </ul>
