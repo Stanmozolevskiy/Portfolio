@@ -7,10 +7,10 @@
         <div class="row">
             <div class="col-8">
                
-                <ngb-carousel *ngIf="portfolioData?.images" [animation]="false" [interval]="2000" >
+                <ngb-carousel *ngIf="portfolioData?.images" [animation]="false" [interval]="2500" >
                     <ng-template ngbSlide *ngFor="let image of portfolioData.images" >
-                      <div class="picsum-img-wrapper" style="height: 350px;">
-                        <img [src]="image">
+                      <div class="picsum-img-wrapper" style="max-height: 350px;">
+                        <img [src]="image" class="carusel-image">
                       </div>
                       <div class="carousel-caption">
                       </div>

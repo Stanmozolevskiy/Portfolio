@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './contact/contact.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { GetintouchComponent } from './getintouch/getintouch.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -41,7 +41,7 @@ const config = {
     SinglePortfolioComponent,
     HeaderComponent,
     AsideComponent,
-    ParagraphComponent 
+    ParagraphComponent
   ],
   imports: [
     AppRoutingModule,
@@ -50,7 +50,8 @@ const config = {
     ReactiveFormsModule ,
     AngularFireModule.initializeApp(config),
     AngularFireFunctionsModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,19 +14,16 @@
           <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#wordpress" type="button" role="tab" aria-selected="false">WordPress</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-selected="false">Backend</button>
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#backend" type="button" role="tab" aria-selected="false">Backend</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-selected="false">FrontEnd</button>
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#website" type="button" role="tab" aria-selected="false">Website</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-selected="false">Website</button>
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#games" type="button" role="tab" aria-selected="false">Games</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-selected="false">Games</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-selected="false">Firebase</button>
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#firebase" type="button" role="tab" aria-selected="false">Firebase</button>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
@@ -58,7 +55,7 @@
               </div>
 
               <div class="col-md-4">
-                <div class="profile-card-2"><a href="https://movieapes.com/" target="blank">
+                <div class="profile-card-2"><a routerLink="/portfolio/movieapes">
                   <img src="../../assets/images/MovieApes.jpg"></a>
                     <div class="profile-name">MOVIE APES</div>
                     <div class="profile-username">Movie Rating </div> 
@@ -74,8 +71,8 @@
               </div>
 
               <div class="col-md-4">
-                <div class="profile-card-2"><a href="https://stanmozolevskiy.github.io/Weather-forecast/" target="blank">
-                  <img src="../../assets/images/WeatherForecast.jpg"></a>
+                <div class="profile-card-2"><a routerLink="/portfolio/b2winform" >
+                  <img src="../../assets/images/inform.jpg"></a>
                     <div class="profile-name">B2W Inform</div>
                     <div class="profile-username">Data tool</div> 
                   </div>
@@ -113,6 +110,14 @@
                         <div class="profile-username">Weather Forecast</div> 
                       </div>
                   </div>
+
+                  <div class="col-md-4">
+                    <div class="profile-card-2"><a routerLink="/portfolio/b2winform" >
+                      <img src="../../assets/images/inform.jpg"></a>
+                        <div class="profile-name">B2W Inform</div>
+                        <div class="profile-username">Data tool</div> 
+                      </div>
+                  </div>
         
                 </div>
               </div>
@@ -146,8 +151,20 @@
               </div>
           </div>
       </div>
-   
     </div>
+
+    <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="contact-tab">
+    </div>
+
+    <div class="tab-pane fade" id="website" role="tabpanel" aria-labelledby="contact-tab">
+    </div>
+
+    <div class="tab-pane fade" id="games" role="tabpanel" aria-labelledby="contact-tab">
+    </div>
+
+    <div class="tab-pane fade" id="firebase" role="tabpanel" aria-labelledby="contact-tab">
+    </div>
+
   </div>
 </div>
 <app-getintouch></app-getintouch>
