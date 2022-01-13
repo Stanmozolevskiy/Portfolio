@@ -24,6 +24,9 @@
   .link:hover{
     color:rgb(204, 130, 123);
   }
+  .link{
+    margin-left: 5px;
+  }
   
   .edit_hover_class fa-icon{
     visibility: hidden;

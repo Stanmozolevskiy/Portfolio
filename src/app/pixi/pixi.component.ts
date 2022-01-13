@@ -1,5 +1,4 @@
-import { Component, HostListener, NgZone, OnInit } from "@angular/core";
-import { ActivatedRoute } from "@angular/router";
+import { Component, OnInit } from "@angular/core";
 
 import { ImageParticleSystem } from "./image-particle-system";
 
@@ -14,32 +13,13 @@ export class PixiComponent implements OnInit {
                       "https://i.ibb.co/9qbv8xk/m-340-340.png"||
                       "https://i.ibb.co/GpftHS8/m-1040-1040.png";
   
-  
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event:any):void {
-  //   if(window.innerWidth <= 500)
-  //     this.reloadComponent();
-  //   if(window.innerWidth <= 800)
-  //     this.reloadComponent();
-  //   if(window.innerWidth <= 900)
-  //     this.reloadComponent();
-  //   if(window.innerWidth <= 992)  
-  //     this.reloadComponent();
-  // };
-
-  private reloadComponent() {
-     window.location.reload();
-     }
-     
   constructor() {}
   ngOnInit(): void {}
      
-
   ngAfterContentInit(){
     this.imageParticleSystem = new ImageParticleSystem();
     this.imageParticleSystem.setup(this.setXOffset(), this.setYOffset(), this.setPadding());
     this.imageParticleSystem.changeImage(this.IMAGE_URL);
-
   }
 
   ngOnDestroy(){
@@ -83,7 +63,6 @@ export class PixiComponent implements OnInit {
     if(window.innerWidth > 1180)
       return 200;
     
-
       return 260;
   }
 }

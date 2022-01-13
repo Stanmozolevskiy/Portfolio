@@ -257,8 +257,8 @@ export class ImageParticleSystem {
     const fractionSizeY = imageHeight / PARTICLE_SIZE;
     //HERER WE SET OFFSET 
 
-    console.log(`Xoffset: ${((renderingWidth -Math.min(renderingWidth, renderingHeight)/2)/2)* this.XoffsetIndex}` );
-    console.log(`Yffset: ${((renderingHeight - Math.min(renderingWidth, renderingHeight))/2)/2 * this.YoffsetIndex}` );
+    // console.log(`Xoffset: ${((renderingWidth -Math.min(renderingWidth, renderingHeight)/2)/2)* this.XoffsetIndex}` );
+    // console.log(`Yffset: ${((renderingHeight - Math.min(renderingWidth, renderingHeight))/2)/2 * this.YoffsetIndex}` );
 
     const offsetX = ((renderingWidth - Math.min(renderingWidth, renderingHeight)/2)/2)* this.XoffsetIndex ;
     const offsetY = ((renderingHeight - Math.min(renderingWidth, renderingHeight)/2)/2)* this.YoffsetIndex;
@@ -283,7 +283,7 @@ export class ImageParticleSystem {
         this.imageParticles.push(particle);
       }
     }
-    console.log("Particle amount: ", this.imageParticles.length);
+    // console.log("Particle amount: ", this.imageParticles.length);
   }
 
   private addParticleSpritesToContainer() {

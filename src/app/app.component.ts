@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-
 export class AppComponent {
   title = 'Portfolio';
+  opened:boolean = true;
+
+  onClick(){
+    this.opened == false ? this.opened = true : this.opened = false; 
+  }
+
 }

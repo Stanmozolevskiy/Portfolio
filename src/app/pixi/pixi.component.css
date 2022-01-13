@@ -6,10 +6,6 @@
     transform: translateX(-50%) translateY(-50%);
     aspect-ratio: auto 1200 / 1200
   }
-  #viewport {
-    /* position: absolute !important; */
-    
-   }
 
    @media only screen and (max-width: 992px) {
 

@@ -5,13 +5,9 @@
   font-size: 22px;
   font-weight: 900;
 }
-
 .left_area span{
   color: #19B3D3;
 }
-
-
-
 .sidebar {
   transition: 0.5s;
   position: fixed;
@@ -73,27 +69,27 @@ label #sidebar_btn:hover{
   color: rgb(207,112,104);
 }
 
-#check:checked ~ .sidebar{
+#check.opened ~ .sidebar{
   left: -190px;
 }
-
-#check:checked ~ .sidebar a span{
+#check.opened ~ .sidebar a span{
   display: none;
 }
-
+#check.opened ~ .content{
+  margin-left: 0px;
+}
+#check{
+  display: none;
+}
+/* .black{
+  background: black;
+  font-size: 60px !important;
+} */
 
 .content{
   margin-left: 160px;
   height: 100vh;
   transition: 0.5s;
-}
-
-#check:checked ~ .content{
-  margin-left: 0px;
-}
-
-#check{
-  display: none;
 }
 
 .links{
@@ -114,7 +110,7 @@ label #sidebar_btn:hover{
 }
       
 
-#check:checked ~ .sidebar .links{
+#check.opened  ~ .sidebar .links{
   font-size: 20px;
   width: 80px;
   margin-left: 170px;
@@ -142,7 +138,7 @@ label #sidebar_btn:hover{
       -webkit-box-pack: justify;
        justify-content: space-between; 
   }
-  #check:checked ~ .sidebar{
+  #check.opened  ~ .sidebar{
     left: -410px;
   }
   .sidebar a{
