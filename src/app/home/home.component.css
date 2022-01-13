@@ -1,18 +1,17 @@
-
-  .custom-btn {
-    transition: all .5s ease;
-    color: #fff;
-    font-family:'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    font-size: 17px;
-    background-color : transparent;
-    padding: 15px;
-    outline: none;
-    border-radius: 4px;
-    border: 2px solid rgb(207,112,104);
-  }
+.custom-btn {
+  transition: all .5s ease;
+  color: #fff;
+  font-family:'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color : transparent;
+  padding: 15px;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid rgb(207,112,104);
+}
   a:hover {
      text-decoration: none; 
     }
@@ -38,6 +37,13 @@
     content: "Angular";
     animation: animate infinite 7s;
     padding-left: 10px;
+  }
+
+  .buttons{
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    align-items: center;
     
   }
   
@@ -57,14 +63,6 @@
     100% {
       content: "SQL";
   }
-  }
-
-  .buttons{
-    display: flex;
-    flex-flow: row wrap;
-    -webkit-box-align: center;
-    align-items: center;
-    
   }
  
   @media only screen and (max-width: 992px) {
@@ -90,5 +88,14 @@
     }
     h1{
       padding-top: 10px;
+    }
+    .row{
+      margin-top: 400px;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .row{
+      margin-top: 300px;
     }
   }

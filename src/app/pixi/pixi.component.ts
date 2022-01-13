@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, NgZone } from "@angular/core";
+import { Component, HostListener, NgZone, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
 
 import { ImageParticleSystem } from "./image-particle-system";
 
@@ -7,34 +8,82 @@ import { ImageParticleSystem } from "./image-particle-system";
   template: ` <canvas width="1200" height="1200" class="canvas" id="viewport"></canvas> `,
   styleUrls: ['./pixi.component.css'],
 })
-export class PixiComponent implements AfterViewInit {
-  IMAGE_URL:string = "https://i.ibb.co/9qbv8xk/m-340-340.png" ||"https://i.ibb.co/GpftHS8/m-1040-1040.png";
+export class PixiComponent implements OnInit {
+  imageParticleSystem!:ImageParticleSystem;
+  IMAGE_URL:string = "https://i.ibb.co/7n8XGkY/m-512-512.png"||
+                      "https://i.ibb.co/9qbv8xk/m-340-340.png"||
+                      "https://i.ibb.co/GpftHS8/m-1040-1040.png";
+  
+  
+  // @HostListener('window:resize', ['$event'])
+  // onResize(event:any):void {
+  //   if(window.innerWidth <= 500)
+  //     this.reloadComponent();
+  //   if(window.innerWidth <= 800)
+  //     this.reloadComponent();
+  //   if(window.innerWidth <= 900)
+  //     this.reloadComponent();
+  //   if(window.innerWidth <= 992)  
+  //     this.reloadComponent();
+  // };
 
-  constructor(private zone: NgZone) {
-    // The application will create a canvas element for you that you
-    // can then insert into the DOM.
+  private reloadComponent() {
+     window.location.reload();
+     }
+     
+  constructor() {}
+  ngOnInit(): void {}
+     
+
+  ngAfterContentInit(){
+    this.imageParticleSystem = new ImageParticleSystem();
+    this.imageParticleSystem.setup(this.setXOffset(), this.setYOffset(), this.setPadding());
+    this.imageParticleSystem.changeImage(this.IMAGE_URL);
+
   }
 
-  public ngAfterViewInit(): void {
-    this.zone.runOutsideAngular((): void => {
-      // ==================================================
-      // Main
-      // ==================================================
-      
-      const imageParticleSystem = new ImageParticleSystem();
-      console.log(window.innerWidth);
-      imageParticleSystem.setup(this.setOffset(), this.setPadding());
-      imageParticleSystem.changeImage(this.IMAGE_URL);
-    });
+  ngOnDestroy(){
+    this.imageParticleSystem.destroy();
   }
-  private setOffset():number{
+
+  private setXOffset():number{
+    if(window.innerWidth <= 992)
+      return  0
     if(window.innerWidth >1180)
       return 1.3;
+    
       return 1.1;
   }
+
+  private setYOffset():number{
+    if(window.innerWidth <= 500)
+    return 0;
+    
+    if(window.innerWidth <= 800)
+      return -0.2;
+    
+    if(window.innerWidth <= 900)
+      return -0.4;
+    
+    if(window.innerWidth <= 992)
+      return -1;
+
+      return 0;
+  }
+
   private setPadding():number{
-    if(window.innerWidth >1180)
+    if(window.innerWidth <= 500)
+    return 100;
+    if(window.innerWidth <= 800)
+    return 160;
+    if(window.innerWidth <= 900)
+    return 200;
+    if(window.innerWidth <= 992)
+      return  260;
+    if(window.innerWidth > 1180)
       return 200;
+    
+
       return 260;
   }
 }

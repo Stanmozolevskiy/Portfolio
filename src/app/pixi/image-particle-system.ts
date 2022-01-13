@@ -129,6 +129,7 @@ export class ImageParticleSystem {
   private imageTexturePixels!: Uint8ClampedArray;
   private performanceChecker: PerformanceChecker;
   private XoffsetIndex!: number;
+  private YoffsetIndex!: number;
   private PADDING!: number;
 
   constructor() {
@@ -145,8 +146,13 @@ export class ImageParticleSystem {
     });
   }
 
-  public setup( XoffsetIndex: number, Padding: number) {
+  public destroy(){
+    this.app.destroy(true);
+  }
+
+  public setup( XoffsetIndex: number, YoffsetIndex:number, Padding: number) {
     this.XoffsetIndex = XoffsetIndex;
+    this.YoffsetIndex = YoffsetIndex;
     this.PADDING = Padding;
     // Assuming renderer is at "app.renderer"
     if (!("events" in this.app.renderer)) {
@@ -251,10 +257,11 @@ export class ImageParticleSystem {
     const fractionSizeY = imageHeight / PARTICLE_SIZE;
     //HERER WE SET OFFSET 
 
-    console.log(`offset: ${((renderingWidth -Math.min(renderingWidth, renderingHeight)/2)/2)* this.XoffsetIndex}` );
+    console.log(`Xoffset: ${((renderingWidth -Math.min(renderingWidth, renderingHeight)/2)/2)* this.XoffsetIndex}` );
+    console.log(`Yffset: ${((renderingHeight - Math.min(renderingWidth, renderingHeight))/2)/2 * this.YoffsetIndex}` );
 
     const offsetX = ((renderingWidth - Math.min(renderingWidth, renderingHeight)/2)/2)* this.XoffsetIndex ;
-    const offsetY = (renderingHeight - Math.min(renderingWidth, renderingHeight)) / 2;
+    const offsetY = ((renderingHeight - Math.min(renderingWidth, renderingHeight)/2)/2)* this.YoffsetIndex;
 
     for (let i = 0; i < fractionSizeX; i++) {
       for (let j = 0; j < fractionSizeY; j++) {
