@@ -85,6 +85,20 @@ export function getData(): data[] {
             boolet: ["Front End Development (Angular, TypeScript, Bootstrap)", "Work with REST API provider", "DNS C Recorsd binding", "Server side rendering and Lazy loading with Angular"],
             chalanges: ["I run this project using the Trello boards so you can see entire progress and challenges along with solutions here: https://trello.com/b/rvGjvRIp/kanban-template.", "Some of the challenges of this specific project were implementing the YouTube modal popup to play automatically since it is prohibited by most of the browsers. I also had to convert all of the Static HTML 5 template tender data dynamically that was supplied by the API."],
             images: ["../../../assets/images/MovieApes/Movie-Apes.jpg", "../../../assets/images/MovieApes/Movie-Apes_1.jpg", "../../../assets/images/MovieApes/Movie-Apes_2.jpg", "../../../assets/images/MovieApes/Movie-Apes_3.jpg",  "../../../assets/images/MovieApes/Movie-Apes_4.jpg",  "../../../assets/images/MovieApes/Movie-Apes_5.jpg",  "../../../assets/images/MovieApes/Movie-Apes_6.jpg"]
+        },
+        {
+            id: "weatherforecast",
+            name: "Weather-forecast",
+            secondTitle: "Weather forecast website",
+            tags: ["Angular", "Weatherstck", "FrontEnd", "TypeScript", 
+            "Sass", "Node.js", "Design", "API", "UX"],
+            date:"2021",
+            link: "https://stanmozolevskiy.github.io/Weather-forecast/",
+            techSpecifications: ["The Movieapes is the source of entertainment information, with features designed to help fans explore the world of movies and shows and decide what to watch. You can also easily find the place where you can rent the movies you like."],
+            responsibilities: ["I was responsible for the entire project and implemented it using the Angular 12 framework along with static HTML templates that I purchased from https://preview.themeforest.net . For the data provider I chose The Movie Database API, They have the biggest collection of the data available at the moment."],
+            boolet: ["Front End Development (Angular, TypeScript, Bootstrap)", "Work with REST API provider", "DNS C Recorsd binding", "Server side rendering and Lazy loading with Angular"],
+            chalanges: ["I run this project using the Trello boards so you can see entire progress and challenges along with solutions here: https://trello.com/b/rvGjvRIp/kanban-template.", "Some of the challenges of this specific project were implementing the YouTube modal popup to play automatically since it is prohibited by most of the browsers. I also had to convert all of the Static HTML 5 template tender data dynamically that was supplied by the API."],
+            images: ["../../../assets/images/WeatherForecast.jpg"]
         }
     ] 
 }

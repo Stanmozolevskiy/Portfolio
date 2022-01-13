@@ -17,6 +17,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AsideComponent } from './common/aside/aside.component';
 import { ParagraphComponent } from './common/paragraph/paragraph.component';
+import { PixiComponent } from './pixi/pixi.component';
 
 
 
@@ -41,7 +42,8 @@ const config = {
     SinglePortfolioComponent,
     HeaderComponent,
     AsideComponent,
-    ParagraphComponent
+    ParagraphComponent,
+    PixiComponent
   ],
   imports: [
     AppRoutingModule,
