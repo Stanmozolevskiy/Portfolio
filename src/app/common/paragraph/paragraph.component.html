@@ -1,6 +1,6 @@
 <h2>{{header}}</h2>
 <div *ngIf="paragraph">
-    <p *ngFor="let text of paragraph">{{text}}</p>
+    <p [innerHTML]="text | linky:{newWindow: false}" *ngFor="let text of paragraph"></p>
 </div>
 <ul *ngIf="tags">
     <li *ngFor="let tag of tags"><strong>{{tag}}</strong></li>

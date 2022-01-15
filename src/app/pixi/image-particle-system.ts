@@ -14,7 +14,7 @@ import {Utils,PerformanceChecker} from "./utils"
 
 
 const PARTICLE_SIZE = 3; // image pixel size
-const DEFAULT_REPULSION_CHANGE_DISTANCE = 200;
+const DEFAULT_REPULSION_CHANGE_DISTANCE = 100;
 
 let repulsionChangeDistance: number = DEFAULT_REPULSION_CHANGE_DISTANCE;
 //@ts-ignore
@@ -50,11 +50,11 @@ class ImageParticle {
   ) {
     this.position = originPosition.clone();
     this.originPosition = originPosition.clone();
-    this.velocity = new PIXI.Point(Utils.random(0, 50), Utils.random(0, 50));
+    this.velocity = new PIXI.Point(Utils.random(0, 30), Utils.random(0, 30));
     this.repulsion = Utils.random(1.0, 5.0);
     this.mouseRepulsion = 1.0;
     this.gravity = 0.01;
-    this.maxGravity = Utils.random(0.01, 0.04);
+    this.maxGravity = Utils.random(0.01, 0.03);
     this.scale = originScale;
     this.color = originColor;
     //@ts-ignore

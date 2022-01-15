@@ -4,7 +4,7 @@ import { ImageParticleSystem } from "./image-particle-system";
 
 @Component({
   selector: "pixi-image-particle",
-  template: ` <canvas width="1200" height="1200" class="canvas" id="viewport"></canvas> `,
+  template: ` <canvas class="canvas" id="viewport"></canvas> `,
   styleUrls: ['./pixi.component.css'],
 })
 export class PixiComponent implements OnInit {

@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AsideComponent } from './common/aside/aside.component';
 import { ParagraphComponent } from './common/paragraph/paragraph.component';
 import { PixiComponent } from './pixi/pixi.component';
+import { LinkyModule } from 'ngx-linky';
 
 
 
@@ -54,6 +55,8 @@ const config = {
     AngularFireFunctionsModule,
     NgbModule,
     FormsModule,
+    LinkyModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
