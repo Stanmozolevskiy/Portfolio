@@ -2,5 +2,5 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
 
-https://stanmozolevskiy.github.io/Portfolio/
+https://mozolevskiy.com
 
