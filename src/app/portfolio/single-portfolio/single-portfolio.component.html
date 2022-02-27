@@ -18,13 +18,13 @@
                 </ngb-carousel>
 
                 <div style="padding-top: 40px;">
-                    <app-paragraph [header]="'Technical specification'"
+                    <app-paragraph *ngIf="portfolioData.techSpecifications" [header]="'Technical specification'"
                     [paragraph]="portfolioData.techSpecifications"></app-paragraph>
                   
-                    <app-paragraph [header]="'Responsibilities'"
+                    <app-paragraph *ngIf="portfolioData.responsibilities" [header]="'Responsibilities'"
                     [paragraph]="portfolioData.responsibilities" [tags]="portfolioData.boolet"></app-paragraph>
                             
-                    <app-paragraph [header]="'Challenges'"
+                    <app-paragraph *ngIf="portfolioData.chalanges" [header]="'Challenges'"
                     [paragraph]="portfolioData.chalanges"></app-paragraph>
                   </div>
                 </div>
@@ -34,6 +34,7 @@
                     <app-aside [tags]="portfolioData.tags" [header]="'Technologies'"></app-aside>
                     <app-aside [year]="portfolioData.date" [header]="'Date'"></app-aside>
                     <app-aside [link]="portfolioData.link" [header]="'Online'"></app-aside>
+                    <app-aside [link]="portfolioData.sourceCode" [header]="'Source code'"></app-aside>
                 </div>
             </div>
         </div>
