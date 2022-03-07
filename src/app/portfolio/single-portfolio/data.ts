@@ -154,6 +154,18 @@ export function getData(): data[] {
             techSpecifications: ["This is really simple project that was a part of my coding school and it uses vanilla Javascript and some CSS"],
             images: ["../../../assets/images/drum-player.jpg"]
         },
+
+        {
+            id: "giftastic",
+            name: "Gif Tastic",
+            secondTitle: "GifTastic, one of school projects.",
+            tags: ["TypeScript", "Angular12", "Bootstrap","CSS"],
+            date:"2020",
+            link: "https://stanmozolevskiy.github.io/GifTastic/",
+            sourceCode: "https://github.com/Stanmozolevskiy/GifTastic",
+            techSpecifications: ["The GifTastic project fulfills a homework assignment for University of New Hampshire Coding School, August 2019 to February 2020. Besides continuing to work with Angular 12 and TypeScript, with this assignment, I also began learning how to work with CSS templates and the GIPHY API to write items dynamically to the DOM without a browser page refresh."],
+            images: ["../../../assets/images/drum-player.jpg"]
+        },
         
         
     ] 
