@@ -164,7 +164,7 @@ export function getData(): data[] {
             link: "https://stanmozolevskiy.github.io/GifTastic/",
             sourceCode: "https://github.com/Stanmozolevskiy/GifTastic",
             techSpecifications: ["The GifTastic project fulfills a homework assignment for University of New Hampshire Coding School, August 2019 to February 2020. Besides continuing to work with Angular 12 and TypeScript, with this assignment, I also began learning how to work with CSS templates and the GIPHY API to write items dynamically to the DOM without a browser page refresh."],
-            images: ["../../../assets/images/drum-player.jpg"]
+            images: ["../../../assets/images/GifTastic.jpg"]
         },
         
         
