@@ -166,6 +166,18 @@ export function getData(): data[] {
             techSpecifications: ["The GifTastic project fulfills a homework assignment for University of New Hampshire Coding School, August 2019 to February 2020. Besides continuing to work with Angular 12 and TypeScript, with this assignment, I also began learning how to work with CSS templates and the GIPHY API to write items dynamically to the DOM without a browser page refresh."],
             images: ["../../../assets/images/GifTastic.jpg"]
         },
+        {
+            id: "pixi-js",
+            name: "Image Breakin particles",
+            secondTitle: "Image breaking to particles (pixi.js)",
+            tags: ["TypeScript", "Angular12", "Pixi-js","SCSS"],
+            date:"2021",
+            link: "https://stanmozolevskiy.github.io/pixi-letter-animation/",
+            sourceCode: "https://github.com/Stanmozolevskiy/pixi-letter-animation",
+            techSpecifications: ["Image Breakin particles  is a complex project that is built with the Pixi.js library. Pixi.js is a free open-source 2D  and 3D engine used to make animated websites and HTML5 games.It can be used on all modern browsers - on both desktop and mobile."],
+            images: ["../../../assets/images/pixi-js.jpg"],
+            chalanges: ["With this project I had a few different challenges. One, Angular does not support Pixi.js library so I had to modify the library itself in order to use it. Second challenge was a poor documentation that Pixi.js provides so I had to find a information on forums and Stack overflow."]
+        }
         
         
     ] 
