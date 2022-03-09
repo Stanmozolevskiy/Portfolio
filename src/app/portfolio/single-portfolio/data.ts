@@ -174,7 +174,7 @@ export function getData(): data[] {
             date:"2021",
             link: "https://stanmozolevskiy.github.io/pixi-letter-animation/",
             sourceCode: "https://github.com/Stanmozolevskiy/pixi-letter-animation",
-            techSpecifications: ["Image Breakin particles  is a complex project that is built with the Pixi.js library. Pixi.js is a free open-source 2D  and 3D engine used to make animated websites and HTML5 games.It can be used on all modern browsers - on both desktop and mobile."],
+            techSpecifications: ["Image Breakin particles is a complex project that is built with the Pixi.js library. Pixi.js is a free open-source 2D and 3D engine used to make animated websites and HTML5 games. It can be used on all modern browsers - on both desktop and mobile."],
             images: ["../../../assets/images/pixi-js.jpg"],
             chalanges: ["With this project I had a few different challenges. One, Angular does not support Pixi.js library so I had to modify the library itself in order to use it. Second challenge was a poor documentation that Pixi.js provides so I had to find a information on forums and Stack overflow."]
         }
