@@ -19,8 +19,10 @@ export class PixiComponent implements OnInit {
   }
   
   ngAfterContentInit(){ 
-    this.imageParticleSystem.setup(this.setXOffset(), this.setYOffset(), this.setPadding());
-    this.imageParticleSystem.changeImage(this.IMAGE_URL);
+    setTimeout( ()=>{
+      this.imageParticleSystem.setup(this.setXOffset(), this.setYOffset(), this.setPadding());
+      this.imageParticleSystem.changeImage(this.IMAGE_URL); 
+    }, 100);
   }
 
   ngOnDestroy(){

@@ -19,6 +19,7 @@ import { AsideComponent } from './common/aside/aside.component';
 import { ParagraphComponent } from './common/paragraph/paragraph.component';
 import { PixiComponent } from './pixi/pixi.component';
 import { LinkyModule } from 'ngx-linky';
+import { AnimationComponent } from './common/animation/animation.component';
 
 
 
@@ -44,7 +45,8 @@ const config = {
     HeaderComponent,
     AsideComponent,
     ParagraphComponent,
-    PixiComponent
+    PixiComponent,
+    AnimationComponent
   ],
   imports: [
     AppRoutingModule,
@@ -55,8 +57,7 @@ const config = {
     AngularFireFunctionsModule,
     NgbModule,
     FormsModule,
-    LinkyModule,
-    
+    LinkyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
