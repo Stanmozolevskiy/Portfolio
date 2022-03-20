@@ -2,6 +2,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,8 +21,6 @@ import { ParagraphComponent } from './common/paragraph/paragraph.component';
 import { PixiComponent } from './pixi/pixi.component';
 import { LinkyModule } from 'ngx-linky';
 import { AnimationComponent } from './common/animation/animation.component';
-
-
 
 const config = {
   apiKey: "AIzaSyDYfIolSWky_mSTDqu5ukJ5pApqksK_Ri0",
@@ -57,6 +56,7 @@ const config = {
     AngularFireFunctionsModule,
     NgbModule,
     FormsModule,
+    BrowserAnimationsModule,
     LinkyModule
   ],
   providers: [],

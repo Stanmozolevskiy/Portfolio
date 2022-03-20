@@ -18,6 +18,6 @@
         </div>
         <!--sidebar end-->
     
-<div class='content'>
-  <router-outlet></router-outlet>
+<div class='content'[@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <router-outlet #o="outlet"></router-outlet>
 </div>
