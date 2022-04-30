@@ -6,16 +6,18 @@
         
         <div class="row">
             <div class="col-8">
-               
-                <ngb-carousel *ngIf="portfolioData?.images" [animation]="false" [interval]="2500" >
-                    <ng-template ngbSlide *ngFor="let image of portfolioData.images" >
-                      <div class="picsum-img-wrapper" style="max-height: 350px;">
-                        <img [src]="image" class="carusel-image">
-                      </div>
-                      <div class="carousel-caption">
-                      </div>
-                    </ng-template>
-                </ngb-carousel>
+               <div>
+                   
+                   <ngb-carousel *ngIf="portfolioData?.images" [animation]="false" [interval]="2500" >
+                       <ng-template ngbSlide *ngFor="let image of portfolioData.images" >
+                         <div class="picsum-img-wrapper" style="max-height: 350px;">
+                           <img [src]="image" class="carusel-image">
+                         </div>
+                         <div class="carousel-caption">
+                         </div>
+                       </ng-template>
+                   </ngb-carousel>
+               </div>
 
                 <div style="padding-top: 40px;">
                     <app-paragraph *ngIf="portfolioData.techSpecifications" [header]="'Technical specification'"
