@@ -124,6 +124,12 @@ color:#aaa;
     }
   }
 
+  @media only screen and(max-width: 900px){
+    .header{
+      font: 600 1.7em/1.2 Raleway, Helvetica, Arial, sans-serif;
+       }
+  }
+
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
@@ -195,6 +201,7 @@ color:#aaa;
           font-size: 100%;
         }
       }
+     
       .body {
         margin: 0 0 3em;
         float: right;

@@ -48,4 +48,11 @@ li{
     [class*="col-"] {
         width: 100%;
       }
+
+      .article{
+        padding: 20px ;
+     }
+     .boxes{
+         padding-top: 20px;
+     }
   }
