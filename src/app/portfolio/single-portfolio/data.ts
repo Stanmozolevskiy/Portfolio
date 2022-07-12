@@ -177,6 +177,20 @@ export function getData(): data[] {
             techSpecifications: ["Image Breakin particles is a complex project that is built with the Pixi.js library. Pixi.js is a free open-source 2D and 3D engine used to make animated websites and HTML5 games. It can be used on all modern browsers - on both desktop and mobile."],
             images: ["../../../assets/images/pixi-js.jpg"],
             chalanges: ["With this project I had a few different challenges. One, Angular does not support Pixi.js library so I had to modify the library itself in order to use it. Second challenge was a poor documentation that Pixi.js provides so I had to find a information on forums and Stack overflow."]
+        },
+
+        {
+            id: "subscriber",
+            name: "Subscriber",
+            secondTitle: "Subscriber is a Facebook Marketplace scraper",
+            tags: ["TypeScript", "Angular12", "Firebase","Twilio", "TypeScript", ".net5",
+            "Kendo", "Firebase", "Docker", "Heroku", "C#"],
+            date:"2022",
+            link: "https://github.com/Stanmozolevskiy/Subscriber/tree/main",
+            sourceCode: "https://github.com/Stanmozolevskiy/Subscriber/tree/main",
+            techSpecifications: ["Subscriber uses the data from Facebook Marketplace. It uses the Puppeteer to scrape the data from the Facebook. You can select a topic to subscribe and monitor the market place. When there are new listings available you will get an SMS/Email right away, that way you will be first to contact seller. It can be used on all modern browsers - on both desktop and mobile."],
+            images: ["../../../assets/images/Subscriber/1.jpg", "../../../assets/images/Subscriber/2.jpg", "../../../assets/images/Subscriber/3.jpg", "../../../assets/images/Subscriber/4.jpg"],
+            chalanges: ["With this project I had a few different challenges. The biggest challenge was to find out how the Puppeteer works for scraping data from the dynamic web pages. Another challenge was to find the way to sort the data from Facebook in incognito mode."]
         }
         
         
